@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--favicon-->
+    <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+    <!--plugins-->
+    <link href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+    <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+    <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+    <link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+    <!-- loader-->
+    <link href="assets/css/pace.min.css" rel="stylesheet" />
+    <script src="assets/js/pace.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <link href="assets/css/icons.css" rel="stylesheet">
+    <!-- Theme Style CSS -->
+    <link rel="stylesheet" href="assets/css/dark-theme.css" />
+    <link rel="stylesheet" href="assets/css/semi-dark.css" />
+    <link rel="stylesheet" href="assets/css/header-colors.css" />
+
+    <!-- icon cdn -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <title>Amdash - Bootstrap 5 Admin Dashboard Template</title>
+
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script>
+
+    <!-- <link href="style.css" rel="stylesheet"> -->
+    <style>
+        .card {
+            width: 100%;
+            height: auto;
+            background-image: linear-gradient(0deg, white, skyblue);
+        }
+
+        button {
+            background-image: linear-gradient(0deg, skyblue, white);
+        }
+        .sidebar-wrapper
+        {
+            background-image: linear-gradient(0deg, white, skyblue);
+        }
+        .sidebar-header
+        {
+           
+            background-color: skyblue;
+            color: black;
+        }
+        
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <!-- start navnar -->
+
+    <div class="wrapper">
+
+        <div class="sidebar-wrapper" data-simplebar="true">
+            <div class="sidebar-header">
+                <div class="sidebar-wrapper" data-simplebar="true">
+                    <div class="sidebar-header">
+                        <div>
+                            <img src="./assets/images/gallery/logo.png" class="img-fluid text-center">
+                        </div>
+                        <div class="toggle-icon ms-auto"><i class="bx bx-arrow-to-left"></i>
+                        </div>
+                    </div>
+
+                    <!--navigation-->
+                    <ul class="metismenu" id="menu">
+                        <li>
+                            <a href="javascript:;" class="has-arrow">
+                                <a href="index.html">
+                                    <div class="parent-icon mt-4"><i class='bx bx-home-circle'></i>
+                                    </div>
+                                    <div class="menu-title mt-4">Dashboard</div>
+                                </a>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="javascript:;">
+                           <!-- <a href="user-profile.html"> -->
+                               <div class="parent-icon"><i class="fa-solid fa-calendar-check"></i>
+                               </div>
+                               <div class="menu-title">Appoinments</div>
+                           </a>
+                           <ul>
+                               <li><a href="All-Appointments.html"><i class="bx bx-right-arrow-alt"></i>All Appointments</a>
+                               <li><a href="Add-Appointment.html"><i class="bx bx-right-arrow-alt"></i>Add Appointment</a>
+                               <li><a href="TodayAppoint.html"><i class="bx bx-right-arrow-alt"></i>Todays</a>
+                               <li><a href="UpcomingAppoint.html"><i class="bx bx-right-arrow-alt"></i>Upcoming</a>	
+                               <li><a href="CalenderAppoint.html"><i class="bx bx-right-arrow-alt"></i>Calender</a>
+                               <li><a href="RequestAppoint.html"><i class="bx bx-right-arrow-alt"></i>Request</a>
+                            </ul>
+                       </li>
+
+                        <li>
+
+                            <a href="Patients-contact-list.html">
+                                <div class="parent-icon"><i class="fa-solid fa-hospital-user"></i>
+                                </div>
+                                <div class="menu-title">All Patients</div>
+                            </a>
+                            </a>
+                        </li>
+
+                        <li>
+
+                            <a href="Patients_registration.html">
+                                <div class="parent-icon"><i class="fa-regular fa-address-card"></i>
+                                </div>
+                                <div class="menu-title">Patients Registration</div>
+                            </a>
+                        </li>
+
+                        
+                        <li>
+
+                            <a href="user-profile.html">
+                                <div class="parent-icon"><i class="fa-solid fa-hospital-user"></i>
+                                </div>
+                                <div class="menu-title">Patients Profile</div>
+                            </a>
+                            </a>
+                        </li>
+                        <li>
+                            <!-- <a class="has-arrow" href="javascript:;"> -->
+                               <a href="Discharge.html"> 
+                                <div class=""><i class="fa-solid fa-eject"></i>
+                                </div>
+                                <div class="menu-title">Discharge Patients </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="has-arrow" href="javascript:;">
+                                <div class="parent-icon"> <i class="fa-solid fa-circle-info"></i>
+                                </div>
+                                <div class="menu-title">Patient Triage Details:
+                                </div>
+                            </a>
+                        </li>
+
+                        
+
+                        <li>
+                            <!-- <a class="has-arrow" href="javascript:;"> -->
+                                <a href="Payments.html">
+                                <div class="parent-icon"><i class="fa-regular fa-credit-card"></i>
+                                </div>
+                                <div class="menu-title">Payment</div>
+                            </a>
+                        </li>
+                         
+                        <li>
+                            <!-- <a class="has-arrow" href="javascript:;"> -->
+                            <a href="Donor.html">
+                                <div class="parent-icon"><i class="fa-solid fa-hand-holding-medical"></i>
+                               </div>
+                                <div class="menu-title">Donar</div>
+                            </a>
+                            
+                    
+                        </li>
+
+                       
+                        
+
+                        <li>
+                            <a href="javascript:;" class="has-arrow">
+                                <div class="parent-icon"><i class="bx bx-category"></i>
+                                </div>
+                                <div class="menu-title">Application</div>
+                            </a>
+                            <ul>
+                                <li> <a href="Chatbox.html"><i class="bx bx-right-arrow-alt"></i>Chat Box</a>
+                                </li>
+                                 <li> <a href="Invoice.html"><i class="bx bx-right-arrow-alt"></i>Invoice</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a class="has-arrow" href="javascript:;">
+                           <!-- <a href="user-profile.html"> -->
+                               <div class="parent-icon"><i class="bx bx-user-circle"></i>
+                               </div>
+                               <div class="menu-title">Setting</div>
+                           </a>
+                           <ul>
+                               <li><a href="EmailSetting.html"><i class="bx bx-right-arrow-alt"></i>Email Setting</a>
+                               <li><a href="PaymentSetting.html"><i class="bx bx-right-arrow-alt"></i>Payment Setting</a>
+                               <li><a href="PusherSetting.html"><i class="bx bx-right-arrow-alt"></i>Pusher Setting</a>
+                               <li><a href="ReCaptchaSetting.html"><i class="bx bx-right-arrow-alt"></i>ReCaptcha Setting</a>	
+                               <li><a href="StorageSetting.html"><i class="bx bx-right-arrow-alt"></i>Storage Setting</a>
+                               <li><a href="SEO-Setting.html"><i class="bx bx-right-arrow-alt"></i>SEO Setting</a>
+                               <li><a href="CookieSetting.html"><i class="bx bx-right-arrow-alt"></i>Cookie Setting</a>
+                               <li><a href="CacheSetting.html"><i class="bx bx-right-arrow-alt"></i>Cache Setting</a>
+                               <li><a href="Chat-GPtSetting.html"><i class="bx bx-right-arrow-alt"></i>Chat GPT Setting</a>
+                               
+                           </ul>
+                       </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- end navbar -->
+
+        <!-- start headerBar -->
+
+
+        <header>
+            <div class="topbar d-flex align-items-center ">
+                <nav class="navbar navbar-expand  mt-4">
+                    <div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+                    </div>
+                    <div class="search-bar flex-grow-1 ">
+                        <div class="position-relative search-bar-box">
+                            <input type="text" class=" ms-4   form-control search-control" placeholder="Type to search..." style="font-size: 16px;">
+                            <span class="position-absolute top-50 search-show translate-middle-y">
+                                <i class='bx bx-search ms-2  '></i>
+                            </span>
+                            <span class="position-absolute top-50 search-close translate-middle-y ">
+                                <i class='bx bx-x'></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="user-box dropdown">
+                        <a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/images/avatars/avatar-2.png" class="user-img" alt="user avatar">
+                            <div class="user-info ps-3">
+                                <p class="user-name mb-0">Parul Mehta</p>
+                                <p class="designattion mb-0">Patients</p>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class="bx bx-user"></i><span>Profile</span></a>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class="bx bx-cog"></i><span>Settings</span></a>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class='bx bx-home-circle'></i><span>Dashboard</span></a>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class='bx bx-dollar-circle'></i><span>Earnings</span></a>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class='bx bx-download'></i><span>Downloads</span></a>
+                            </li>
+                            <li>
+                                <div class="dropdown-divider mb-0"></div>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class='bx bx-log-out-circle'></i><span>Logout</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+
+
+        <!-- end headerBar -->
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="page-wrapper">
+            <div class="page-content">
+                <div class="container border">
+
+
+
+
+                    <h1 class="shadow-sm p-3 mb-5 bg-body rounded mt-3"
+                        style=" border:1px solid black; border-radius: 100px; height: 70px;padding: 20PX; width: 97%; background-color: white; ">
+                        All Patients</h1>
+
+                    <div class="row mt-5 ">
+                        <div class="col-sm-4">
+                            <div>
+                                <div class="card" style="width: 35rem; text-align: center;padding: 10px">
+                                    <div>
+                                        <img src="./assets/images/img/doc3.png" class="rounded-circle" alt="...">
+                                    </div>
+                                    <div class="card-body">
+
+                                        <div class="row " style="display: flex; justify-content: center;">
+                                            <div class="col-sm-6 card mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Male</h4>
+                                                    <h6>Patient Gender</h6>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 card mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Age:23</h4>
+                                                    <h6>Years old</h6>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <button style="height: 30px; width: 150px;">View Profile</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div>
+                                <div class="card" style="width: 35rem; text-align: center;padding: 10px">
+                                    <div>
+                                        <img src="./assets/images/img/doc2.png" class="rounded-circle" alt="...">
+                                    </div>
+                                    <div class="card-body">
+
+                                        <div class="row" style="display: flex; justify-content: center;">
+                                            <div class="col-sm-6 card mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Male</h4>
+                                                    <h6>Patient Gender</h6>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 card mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body ">
+                                                    <h4 class="card-title">Age:23</h4>
+                                                    <h6>Years old</h6>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <button style="height: 30px; width: 150px; ">View Profile</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-sm-4">
+                            <div>
+                                <div class="card" style="width: 35rem; text-align: center;padding: 10px">
+                                    <div>
+                                        <img src="./assets/images/img/doc3.png" class="rounded-circle" alt="...">
+                                    </div>
+                                    <div class="card-body">
+
+                                        <div class="row" style="display: flex; justify-content: center;">
+                                            <div class="col-sm-6 card  mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Male</h4>
+                                                    <h6>Patient Gender</h6>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 card  mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body ">
+                                                    <h4 class="card-title">Age:23</h4>
+                                                    <h6>Years old</h6>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <button style="height: 30px; width: 150px; ">View Profile</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-5 ">
+                        <div class="col-sm-4">
+                            <div>
+                                <div class="card" style="width: 35rem; text-align: center;padding: 10px">
+                                    <div>
+                                        <img src="./assets/images/img/doc4.png" class="rounded-circle" alt="...">
+                                    </div>
+                                    <div class="card-body">
+
+                                        <div class="row " style="display: flex; justify-content: center;">
+                                            <div class="col-sm-6 card mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Male</h4>
+                                                    <h6>Patient Gender</h6>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 card mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Age:23</h4>
+                                                    <h6>Years old</h6>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <button style="height: 30px; width: 150px;">View Profile</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div>
+                                <div class="card" style="width: 35rem; text-align: center;padding: 10px">
+                                    <div>
+                                        <img src="./assets/images/img/doc5.png" class="rounded-circle" alt="...">
+                                    </div>
+                                    <div class="card-body">
+
+                                        <div class="row" style="display: flex; justify-content: center;">
+                                            <div class="col-sm-6 card mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Male</h4>
+                                                    <h6>Patient Gender</h6>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 card mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body ">
+                                                    <h4 class="card-title">Age:23</h4>
+                                                    <h6>Years old</h6>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <button style="height: 30px; width: 150px; ">View Profile</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-sm-4">
+                            <div>
+                                <div class="card" style="width: 35rem; text-align: center;padding: 10px">
+                                    <div>
+                                        <img src="./assets/images/img/doc1.png" class="rounded-circle" alt="...">
+                                    </div>
+                                    <div class="card-body">
+
+                                        <div class="row" style="display: flex; justify-content: center;">
+                                            <div class="col-sm-6 card  mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Male</h4>
+                                                    <h6>Patient Gender</h6>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 card  mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body ">
+                                                    <h4 class="card-title">Age:23</h4>
+                                                    <h6>Years old</h6>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <button style="height: 30px; width: 150px; ">View Profile</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row mt-5 ">
+                        <div class="col-sm-4">
+                            <div>
+                                <div class="card" style="width: 35rem; text-align: center;padding: 10px">
+                                    <div>
+                                        <img src="./assets/images/img/doc3.png" class="rounded-circle" alt="...">
+                                    </div>
+                                    <div class="card-body">
+
+                                        <div class="row " style="display: flex; justify-content: center;">
+                                            <div class="col-sm-6 card mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Male</h4>
+                                                    <h6>Patient Gender</h6>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 card mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Age:23</h4>
+                                                    <h6>Years old</h6>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <button style="height: 30px; width: 150px;">View Profile</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div>
+                                <div class="card" style="width: 35rem; text-align: center;padding: 10px">
+                                    <div>
+                                        <img src="./assets/images/img/doc2.png" class="rounded-circle" alt="...">
+                                    </div>
+                                    <div class="card-body">
+
+                                        <div class="row" style="display: flex; justify-content: center;">
+                                            <div class="col-sm-6 card mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Male</h4>
+                                                    <h6>Patient Gender</h6>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 card mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body ">
+                                                    <h4 class="card-title">Age:23</h4>
+                                                    <h6>Years old</h6>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <button style="height: 30px; width: 150px; ">View Profile</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-sm-4">
+                            <div>
+                                <div class="card" style="width: 35rem; text-align: center;padding: 10px">
+                                    <div>
+                                        <img src="./assets/images/img/doc3.png" class="rounded-circle" alt="...">
+                                    </div>
+                                    <div class="card-body">
+
+                                        <div class="row" style="display: flex; justify-content: center;">
+                                            <div class="col-sm-6 card  mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Male</h4>
+                                                    <h6>Patient Gender</h6>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 card  mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body ">
+                                                    <h4 class="card-title">Age:23</h4>
+                                                    <h6>Years old</h6>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <button style="height: 30px; width: 150px; ">View Profile</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row mt-5 ">
+                        <div class="col-sm-4">
+                            <div>
+                                <div class="card" style="width: 35rem; text-align: center;padding: 10px">
+                                    <div>
+                                        <img src="./assets/images/img/doc4.png" class="rounded-circle" alt="...">
+                                    </div>
+                                    <div class="card-body">
+
+                                        <div class="row " style="display: flex; justify-content: center;">
+                                            <div class="col-sm-6 card mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Male</h4>
+                                                    <h6>Patient Gender</h6>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 card mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Age:23</h4>
+                                                    <h6>Years old</h6>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <button style="height: 30px; width: 150px;">View Profile</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div>
+                                <div class="card" style="width: 35rem; text-align: center;padding: 10px">
+                                    <div>
+                                        <img src="./assets/images/img/doc5.png" class="rounded-circle" alt="...">
+                                    </div>
+                                    <div class="card-body">
+
+                                        <div class="row" style="display: flex; justify-content: center;">
+                                            <div class="col-sm-6 card mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Male</h4>
+                                                    <h6>Patient Gender</h6>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 card mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body ">
+                                                    <h4 class="card-title">Age:23</h4>
+                                                    <h6>Years old</h6>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <button style="height: 30px; width: 150px; ">View Profile</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="col-sm-4">
+                            <div>
+                                <div class="card" style="width: 35rem; text-align: center;padding: 10px">
+                                    <div>
+                                        <img src="./assets/images/img/doc1.png" class="rounded-circle" alt="...">
+                                    </div>
+                                    <div class="card-body">
+
+                                        <div class="row" style="display: flex; justify-content: center;">
+                                            <div class="col-sm-6 card  mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Male</h4>
+                                                    <h6>Patient Gender</h6>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 card  mb-3 m-2"
+                                                style="max-width: 15rem; text-align: center;">
+
+
+                                                <div class="card-body ">
+                                                    <h4 class="card-title">Age:23</h4>
+                                                    <h6>Years old</h6>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <button style="height: 30px; width: 150px; ">View Profile</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- </div> -->
+</body>
+
+</html>
